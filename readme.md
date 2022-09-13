@@ -1,7 +1,7 @@
-# Project Name
-The briefest description of my cool project and why you should all use it.
+# :book: Well Read
+This app is an online book club, add books to your reading list, reccomend books and see what is popular.
 
-## :computer: [Click here](#) to see my live project!
+## :computer: https://ancient-dawn-90476.herokuapp.com/ (#) to see my live project!
 
 ## :page_facing_up: About
 - How to use my awesome project.

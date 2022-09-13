@@ -3,12 +3,11 @@
 
 <section class="books">
     <% book_index.each do |book|%>
-    <section class="books">
-        <h1><%= book['title'] %></h1>
-        <h3><%= book['author'] %></h3>
-        <img src="<%= book['image_url'] %>" alt="">
-        
-    </section>
+        <section class="books">
+            <h1><%= book['title'] %></h1>
+            <h3><%= book['author'] %></h3>
+            <img src="<%= book['image_url'] %>" alt=""> 
+        </section>
     <% end %>
 
 </section>
