@@ -1,1 +1,14 @@
 <h1>Well Read | The Online Book Club</h1>
+<a href="/books/add_book">Add Book</a>
+
+<section class="books">
+    <% book_index.each do |book|%>
+    <section class="books">
+        <h1><%= book['title'] %></h1>
+        <h3><%= book['author'] %></h3>
+        <img src="<%= book['image_url'] %>" alt="">
+        
+    </section>
+    <% end %>
+
+</section>

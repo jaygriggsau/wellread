@@ -7,18 +7,20 @@ CREATE TABLE users (
     username TEXT,
     password_digest TEXT,
     isAdmin BOOLEAN
-)
+);
 
 CREATE TABLE books (
     id SERIAL PRIMARY KEY,
     title TEXT,
     author TEXT,
     image_url TEXT
-)
+);
 
 CREATE TABLE stats (
     id SERIAL PRIMARY KEY,
-    isLiked BOOLEAN,
+    is_liked BOOLEAN,
     want_to_read BOOLEAN,
-    reccomended BOOLEAN,
-)
+    is_recommended BOOLEAN
+);
+
+--Tables Created
