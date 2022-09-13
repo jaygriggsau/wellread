@@ -1,5 +1,5 @@
 # :book: Well Read
-This app is an online book club, add books to your reading list, reccomend books and see what is popular.
+This app is an online book club, add books to your reading list, reccomend books and see what books are popular.
 
 ## :computer: https://ancient-dawn-90476.herokuapp.com/ (#) to see my live project!
 
@@ -13,8 +13,8 @@ $ node app.js
 ```
 - Add in-app screenshots.
 
-## :pencil2: Planning & Problem Solving
-- Talk about approach to the problem.
+## :pencil: Planning & Problem Solving
+- Followed error based building
 - Add screenshots/drawings of doodles/plans during the planning phase.
 - Flow charts of app logic.
 ![Wireframing](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)

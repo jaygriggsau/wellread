@@ -24,3 +24,6 @@ CREATE TABLE stats (
 );
 
 --Tables Created
+
+-- need to make stats unique 
+-- add books id and user id for many-many db connections

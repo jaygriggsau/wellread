@@ -22,6 +22,6 @@ end
 
 delete '/books/:id' do
     id = params['id']
-    run_sql("DELETE FROM books WHERE id = $1", [id])
+    delete_book(id)
     redirect '/'
 end
