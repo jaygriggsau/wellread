@@ -1,6 +1,6 @@
      
 require 'sinatra'
-require 'dontenv/load'
+require 'dotenv/load'
 require 'sinatra'
 require 'puma'
 require 'pg'
