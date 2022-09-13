@@ -19,3 +19,9 @@ post '/new_book' do # add sql for adding a new book into here
     create_food(title, author, image_url)
     redirect '/'
 end
+
+delete '/books/:id' do
+    id = params['id']
+    run_sql("DELETE FROM books WHERE id = $1", [id])
+    redirect '/'
+end
