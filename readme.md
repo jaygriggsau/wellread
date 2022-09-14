@@ -1,36 +1,42 @@
 # :book: Well Read
 This app is an online book club, add books to your reading list, reccomend books and see what books are popular.
 
-## :computer: https://ancient-dawn-90476.herokuapp.com/ (#) to see my live project!
+## :computer: Go to https://ancient-dawn-90476.herokuapp.com/ to see my live project!
 
 ## :page_facing_up: About
-- How to use my awesome project.
-- Download instructions (if relevant):
-```zsh
-$ git clone my-awesome-app
-$ cd my-awesome-app
-$ node app.js
-```
+- Simple Login or create an account.
+- Check out the list of books
+- Add books to your reading list
+- reccomend them for others
+
 - Add in-app screenshots.
 
 ## :pencil: Planning & Problem Solving
 - Followed error based building
-- Flow charts of app logic.
+- Build a lot faster using MVC design pattern.
 ![Wireframing](https://i.imgur.com/OYsw8U6.png)
 
 ## :rocket: Cool tech
-- Programming languages
-- Libraries
-- Animations
-- Anything else you'd be proud to show your parents
+-Ruby
+-Sinatra Web Server
+-HTML
+-CSS
 
 ## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
+- If user doesnt exist on log in, it takes them to a blank screen.
+- If user tries to add book to the list and its on there already it throws an error
+- ALOT of CSS
+
 
 ## :sob: Lessons learnt
-What I would do differently if I could wind back the clock...
+
+Planned what I thought was going to be simple but one part, the main feature, turned out complex, bogging me down for hours. Severly.
+
+Over estimated how long it would take to write the correct SQL using three tables.
+Not asking the right type of help.
 
 ## :white_check_mark: Future features
-Auto complete for search 
+- Using API to show catalouge of books that users can search and add to their list.
+- Using API to generate book covers instead of user uploading them
+- Autocomlete on search 
+- Show most reccomended books.

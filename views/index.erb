@@ -19,9 +19,10 @@
                 <h6>Author: <%= book['author'] %></h6>
             </header>
             <img src="<%= book['image_url'] %>" alt="">
+            <h2>On Your Reading List!</h2>
         </section>
     <% end %>
-    <h1>Popular Books</h1>
+    <h1>Popular Books</h1> 
     <% book_index.each do |book|%>
         <section class="book">
             <header>
