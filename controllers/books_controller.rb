@@ -1,7 +1,7 @@
 require './models/book'
 
 get '/' do
-    book_index = run_sql("SELECT * FROM books")
+    book_index = run_sql("SELECT * FROM books") # move to models
     erb :index, locals:{
         book_index: book_index
     }
@@ -44,4 +44,11 @@ get '/books/:id/edit_book/' do
     update_book(id, title, author, image_url)
     redirect '/'
 
+  end
+
+  post '/books/:id/add_to_read' do ## currently working on getting user id passed into this table. So that 
+    book_id = params['id']
+    user_id = session['user_id']
+    run_sql("INSERT INTO stats(books_id, userid, want_to_read) VALUES($1, $2, $3)", [book_id, book_id, true])
+    redirect '/'
   end
