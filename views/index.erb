@@ -1,13 +1,16 @@
 <h1>Well Read | The Online Book Club</h1>
 
 <% if logged_in? %>
+<% if current_user['username'] == 'administrator' %>
+<h2>Welcome Admin</h2>
+<% end %>
 <a href="/books/add_book">Add Book</a>
 <section class="controls">
     <form action="/sessions" method="POST">
       <input type="hidden" name="_method" value="delete">
       <button>Logout</button>
     </form>
-<h1>Your Reading List</h1>
+<h1>Your Reading List <%= current_user['username'] %></h1>
 <section class="books">
 <% rec_index.each do |book|%>
         <section class="book">
@@ -26,17 +29,21 @@
                 <h6>Author: <%= book['author'] %></h6>
             </header>
             <img src="<%= book['image_url'] %>" alt="">
+           
             <section class="bottom_controls">
+            <% if current_user['username'] == 'administrator' %>
                 <form action="/books/<%= book['id']%>" METHOD="POST">
                     <input type="hidden" name="_method" value="delete">
                     <button>Delete</button>
                 </form>
                 <a href="/books/<%= book['id'] %>/edit_book/">Edit</a>
+            <% end %>
                 <form action="/books/<%= book['id'] %>/add_to_read" method="POST">
                     <button>Add To Reading List</button>
                 </form>
                 
             </section>
+            
         </section>
     <% end %>
 <%else %>

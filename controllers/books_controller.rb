@@ -2,8 +2,10 @@ require './models/book'
 
 get '/' do
     book_index = run_sql("SELECT * FROM books") # move to models
-    #add code to show read books
-    rec_index = get_reccomended_book()
+    rec_index = get_reccomended_book()#shows reading list books
+
+    # insert code to get user details to dsipaly name on index page
+    
     erb :index, locals:{
         book_index: book_index,
         rec_index: rec_index
