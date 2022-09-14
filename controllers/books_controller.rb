@@ -2,6 +2,7 @@ require './models/book'
 
 get '/' do
     book_index = run_sql("SELECT * FROM books") # move to models
+    #add code to show read books
     erb :index, locals:{
         book_index: book_index
     }
@@ -46,7 +47,7 @@ get '/books/:id/edit_book/' do
 
   end
 
-  post '/books/:id/add_to_read' do ## currently working on getting user id passed into this table. So that 
+  post '/books/:id/add_to_read' do ## currently working on getting user id passed into this table.
     book_id = params['id']
     user_id = session['user_id']
     run_sql("INSERT INTO stats(books_id, userid, want_to_read) VALUES($1, $2, $3)", [book_id, book_id, true])
