@@ -1,6 +1,9 @@
 <h1>Well Read | The Online Book Club</h1>
 <a href="/books/add_book">Add Book</a>
 <a href="/users/new_user">Sign Up</a>
+<a href="/sessions/new">Login</a>
+<% if logged_in? %>
+<h2>Hello</h2>
 <section class="books">
     <% book_index.each do |book|%>
         <section class="books">
@@ -18,3 +21,4 @@
     <% end %>
 
 </section>
+<% end %>
