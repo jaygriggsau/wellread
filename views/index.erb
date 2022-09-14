@@ -2,8 +2,12 @@
 
 <% if logged_in? %>
 <a href="/books/add_book">Add Book</a>
+<section class="controls">
+    <form action="/sessions" method="POST">
+      <input type="hidden" name="_method" value="delete">
+      <button>Logout</button>
+    </form>
 <section class="books">
-<h1>My Books</h1>
 <% rec_index.each do |book|%>
         <section class="book">
             <header>

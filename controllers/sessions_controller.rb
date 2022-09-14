@@ -15,3 +15,9 @@ post '/sessions/new_session' do
       redirect '/'
     end
 end
+
+delete '/sessions' do
+    session['user_id'] = nil
+  
+    redirect '/'
+  end
