@@ -3,6 +3,17 @@
 <% if logged_in? %>
 <a href="/books/add_book">Add Book</a>
 <section class="books">
+<h1>My Books</h1>
+<% rec_index.each do |book|%>
+        <section class="book">
+            <header>
+                <h2><%= book['title'] %></h2>
+                <h6>Author: <%= book['author'] %></h6>
+            </header>
+            <img src="<%= book['image_url'] %>" alt="">
+        </section>
+    <% end %>
+<h1>Popular Books</h1>
     <% book_index.each do |book|%>
         <section class="book">
             <header>

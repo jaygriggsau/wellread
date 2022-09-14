@@ -3,8 +3,10 @@ require './models/book'
 get '/' do
     book_index = run_sql("SELECT * FROM books") # move to models
     #add code to show read books
+    rec_index = get_reccomended_book()
     erb :index, locals:{
-        book_index: book_index
+        book_index: book_index,
+        rec_index: rec_index
     }
 end
 
