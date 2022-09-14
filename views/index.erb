@@ -7,6 +7,7 @@
       <input type="hidden" name="_method" value="delete">
       <button>Logout</button>
     </form>
+<h1>Your Reading List</h1>
 <section class="books">
 <% rec_index.each do |book|%>
         <section class="book">
@@ -17,7 +18,7 @@
             <img src="<%= book['image_url'] %>" alt="">
         </section>
     <% end %>
-<h1>Popular Books</h1>
+    <h1>Popular Books</h1>
     <% book_index.each do |book|%>
         <section class="book">
             <header>

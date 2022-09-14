@@ -33,3 +33,7 @@ UNIQUE (userid, books_id);
 
 -- need to make stats unique 
 -- add books id and user id for many-many db connections
+
+UPDATE users
+SET isAdmin = true
+WHERE id = 5;

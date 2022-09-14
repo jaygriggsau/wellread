@@ -19,7 +19,7 @@ post '/new_book' do # add sql for adding a new book into here
     author = params['author']
     image_url = params['image_url']
     #run sql code to add book to data base
-    create_food(title, author, image_url)
+    create_book(title, author, image_url)
     redirect '/'
 end
 
