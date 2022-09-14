@@ -1,18 +1,16 @@
 <h1>Well Read | The Online Book Club</h1>
 
-<a href="/users/new_user">Sign Up</a>
-<a href="/sessions/new">Login</a>
-
 <% if logged_in? %>
 <a href="/books/add_book">Add Book</a>
-<h2>Hello</h2>
 <section class="books">
     <% book_index.each do |book|%>
         <section class="book">
-            <h2><%= book['title'] %></h2>
-            <h4><%= book['author'] %></h4>
+            <header>
+                <h2><%= book['title'] %></h2>
+                <h6>Author: <%= book['author'] %></h6>
+            </header>
             <img src="<%= book['image_url'] %>" alt="">
-            <section class="buttons">
+            <section class="bottom_controls">
                 <a href="/books/<%= book['id'] %>/edit_book/">Edit</a>
                 <form action="/books/<%= book['id'] %>/add_to_read" method="POST">
                     <button>Add To Reading List</button>
@@ -24,6 +22,8 @@
             </section>
         </section>
     <% end %>
-
+<%else %>
+<a href="/users/new_user">Sign Up</a>
+<a href="/sessions/new">Login</a>
 </section>
 <% end %>

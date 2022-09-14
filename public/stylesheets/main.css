@@ -1,8 +1,12 @@
 * {
     box-sizing: border-box;
   }
+
+button {
+    all: unset;
+}
   
-  body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1080px;
     margin: auto;
@@ -11,7 +15,7 @@
 
 .books {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 1.25rem;
     margin-top: 1.5rem;
   }
@@ -20,4 +24,40 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
+  }
+
+  a, button {
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    background-color: rgb(249, 253, 7);
+    color: rgb(0, 0, 0);
+    font-size:  0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.book h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.book h6 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.book header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: rgb(249, 253, 7);
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .bottom_controls {
+    display: flex;
+    justify-content: space-evenly;
   }
