@@ -17,18 +17,18 @@ This app is an online book club, add books to your reading list, reccomend books
 ![Wireframing](https://i.imgur.com/OYsw8U6.png)
 
 ## :rocket: Cool tech
--Ruby
--Sinatra Web Server
--HTML
--CSS
+- Ruby
+- Sinatra Web Server
+- HTML
+- CSS
 
-## :scream: Bugs to fix :poop:
+## :scream: Bugs to fix :fly:
 - If user doesnt exist on log in, it takes them to a blank screen.
 - If user tries to add book to the list and its on there already it throws an error
 - ALOT of CSS
 
 
-## :sob: Lessons learnt
+## :sad: Lessons learnt
 
 Planned what I thought was going to be simple but one part, the main feature, turned out complex, bogging me down for hours. Severly.
 
@@ -40,3 +40,4 @@ Not asking the right type of help.
 - Using API to generate book covers instead of user uploading them
 - Autocomlete on search 
 - Show most reccomended books.
+- Remove items from your reading list

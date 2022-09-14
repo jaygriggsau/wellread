@@ -2,34 +2,37 @@
 
 <% if logged_in? %>
 <% if current_user['username'] == 'administrator' %>
-<h2>Welcome Admin</h2>
+<h3>Logged in as Admin</h3>
 <% end %>
-<a href="/books/add_book">Add Book</a>
+
 <section class="controls">
+    <a href="/books/add_book">Add Book</a>
     <form action="/sessions" method="POST">
       <input type="hidden" name="_method" value="delete">
       <button>Logout</button>
     </form>
-<h1>Your Reading List <%= current_user['username'] %></h1>
+</section>
+<h3>Your Reading List <%= current_user['username'] %></h3>
 <section class="books">
 <% rec_index.each do |book|%>
         <section class="book">
             <header>
-                <h2><%= book['title'] %></h2>
+                <h3><%= book['title'] %></h3>
                 <h6>Author: <%= book['author'] %></h6>
             </header>
             <img src="<%= book['image_url'] %>" alt="">
-            <h2>On Your Reading List!</h2>
+            <h3>On Your Reading List!</h3>
         </section>
     <% end %>
 </section>
-
-    <h1>Popular Books</h1> 
+<hr>
+<h1>Current Popular Books</h1>
+<hr>
 <section class="books">
     <% book_index.each do |book|%>
         <section class="book">
             <header>
-                <h2><%= book['title'] %></h2>
+                <h3><%= book['title'] %></h3>
                 <h6>Author: <%= book['author'] %></h6>
             </header>
             <img src="<%= book['image_url'] %>" alt="">
