@@ -8,6 +8,8 @@ require 'bcrypt'
 require 'httparty'
 require 'dotenv'
 
+enable :sessions
+
 require './DB/db'
 
 require './controllers/books_controller'

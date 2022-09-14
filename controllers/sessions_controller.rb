@@ -10,7 +10,7 @@ post '/sessions/new_session' do
   
     if user && BCrypt::Password.new(user['password_digest']) == password
       # log the user in if password matches
-      session['user_id'] = user['id']
+      session['user_id'] = user['id'] #session being declared
   
       redirect '/'
     end
