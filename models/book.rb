@@ -9,3 +9,7 @@ end
 def delete_book(id)
     run_sql("DELETE FROM books WHERE id = $1", [id])
 end
+
+def update_book(id, title, author, image_url)
+    run_sql("UPDATE books SET  title = $2, author = $3, image_url = $4 WHERE id = $1",[id, title, author, image_url])
+end

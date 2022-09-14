@@ -1,6 +1,6 @@
 <h1>Well Read | The Online Book Club</h1>
 <a href="/books/add_book">Add Book</a>
-
+<a href="/users/new_user">Sign Up</a>
 <section class="books">
     <% book_index.each do |book|%>
         <section class="books">
@@ -8,6 +8,7 @@
             <h4><%= book['author'] %></h4>
             <img src="<%= book['image_url'] %>" alt="">
             <section class="buttons">
+                <a href="/books/<%= book['id'] %>/edit_book/">Edit</a>
                 <form action="/books/<%= book['id']%>" METHOD="POST">
                     <input type="hidden" name="_method" value="delete">
                     <button>Delete</button>

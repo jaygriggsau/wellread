@@ -25,3 +25,23 @@ delete '/books/:id' do
     delete_book(id)
     redirect '/'
 end
+
+get '/books/:id/edit_book/' do
+    id = params['id']
+    book = run_sql("SELECT * FROM books WHERE id = $1", [id])[0] # move to models
+    
+    erb :'books/edit_book', locals:{
+        book: book
+    }
+  end
+
+  put '/books/:id' do
+    id = params['id']
+    title = params['title']
+    author = params['author']
+    image_url = params['image_url']
+
+    update_book(id, title, author, image_url)
+    redirect '/'
+
+  end
