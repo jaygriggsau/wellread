@@ -27,14 +27,15 @@
             </header>
             <img src="<%= book['image_url'] %>" alt="">
             <section class="bottom_controls">
-                <a href="/books/<%= book['id'] %>/edit_book/">Edit</a>
-                <form action="/books/<%= book['id'] %>/add_to_read" method="POST">
-                    <button>Add To Reading List</button>
-                </form>
                 <form action="/books/<%= book['id']%>" METHOD="POST">
                     <input type="hidden" name="_method" value="delete">
                     <button>Delete</button>
                 </form>
+                <a href="/books/<%= book['id'] %>/edit_book/">Edit</a>
+                <form action="/books/<%= book['id'] %>/add_to_read" method="POST">
+                    <button>Add To Reading List</button>
+                </form>
+                
             </section>
         </section>
     <% end %>

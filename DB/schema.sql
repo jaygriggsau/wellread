@@ -36,4 +36,4 @@ UNIQUE (userid, books_id);
 
 UPDATE users
 SET isAdmin = true
-WHERE id = 5;
+WHERE username = "administrator";
