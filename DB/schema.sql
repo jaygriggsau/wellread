@@ -18,10 +18,16 @@ CREATE TABLE books (
 
 CREATE TABLE stats (
     id SERIAL PRIMARY KEY,
+    books_id INTEGER,
+    userid INTEGER,
     is_liked BOOLEAN,
     want_to_read BOOLEAN,
     is_recommended BOOLEAN
 );
+
+ALTER TABLE stats
+ADD CONSTRAINT unique_stats
+UNIQUE (userid, books_id);
 
 --Tables Created
 
