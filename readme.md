@@ -1,6 +1,14 @@
 # :book: Well Read
 This app is an online book club, add books to your reading list, reccomend books and see what books are popular.
 
+## GOALS
+My goal was to use not copy and paste code, write smaller code sections, test for errors often. For creating routes I just followed the dittys
+
+## How It Went
+Slower not copying and pasting code, but it made a lot more sense and helped me trace errors. Testing more often after nearly change made following error logs and fixing errors a lot easier.
+
+I ran into issues where there was no error message but somtehing wasn't working right and had to trace that issue down still which took time/help.
+
 ## :computer: Go to https://ancient-dawn-90476.herokuapp.com/ to see my live project!
 
 ## :page_facing_up: About
