@@ -14,11 +14,12 @@ FROM books AS oc
    stats AS s
    ON o.Id = s.Id;
 
-   SELECT username
-   FROM users AS oc
+SELECT title, author, image_url
+FROM books AS oc
    INNER JOIN
-   books AS o
+   users AS o
    ON oc.id = o.id
    INNER JOIN
    stats AS s
-   ON o.Id = s.Id;
+   ON oc.Id = s.userid;
+
