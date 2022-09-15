@@ -2,7 +2,9 @@
 This app is an online book club, add books to your reading list, reccomend books and see what books are popular.
 
 ## GOALS
-My goal was to use not copy and paste code, write smaller code sections, test for errors often. For creating routes I just followed the dittys
+My goal was to use not copy and paste code, write smaller code sections, test for errors often. For creating routes I just followed the dittys.
+
+I wanted to to use MVC fromn the start as well.
 
 ## How It Went
 Slower not copying and pasting code, but it made a lot more sense and helped me trace errors. Testing more often after nearly change made following error logs and fixing errors a lot easier.
@@ -32,7 +34,6 @@ I ran into issues where there was no error message but somtehing wasn't working 
 - If user doesnt exist on log in, it takes them to a blank screen.
 - If user tries to add book to the list and its on there already it throws an error
 - ALOT of CSS
-
 
 ## :sad: Lessons learnt
 
