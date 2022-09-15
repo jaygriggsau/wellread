@@ -17,8 +17,6 @@ I ran into issues where there was no error message but somtehing wasn't working 
 - Add books to your reading list
 - reccomend them for others
 
-- Add in-app screenshots.
-
 ## :pencil: Planning & Problem Solving
 - Followed error based building
 - Build a lot faster using MVC design pattern.
