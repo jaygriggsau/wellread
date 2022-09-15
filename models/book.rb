@@ -16,9 +16,18 @@ end
 
 def get_reccomended_book()
 
-    run_sql("SELECT stats.*, books.title, books.author, books.image_url FROM books
-        INNER JOIN stats
-        ON stats.books_id = books.id
-        ORDER BY id DESC")
+    # run_sql("SELECT stats.*, books.title, books.author, books.image_url FROM books
+    #     INNER JOIN stats
+    #     ON stats.books_id = books.id
+    #     ORDER BY id DESC")
+
+    run_sql("SELECT title, author, image_url
+        FROM books AS oc
+           INNER JOIN
+           users AS o
+           ON oc.id = o.id
+           INNER JOIN
+           stats AS s
+           ON o.Id = s.Id")
     
 end
